@@ -1,5 +1,3 @@
-import pytest
-
 from exercise import Bottles
 
 
@@ -18,7 +16,6 @@ class TestBottles:
 
         assert expected == self.bottles.verse(99)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_another_verse(self):
         expected = (
             "89 bottles of beer on the wall, 89 bottles of beer.\n"
@@ -27,7 +24,6 @@ class TestBottles:
 
         assert expected == self.bottles.verse(89)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_verse_2(self):
         expected = (
             "2 bottles of beer on the wall, 2 bottles of beer.\n"
@@ -36,7 +32,6 @@ class TestBottles:
 
         assert expected == self.bottles.verse(2)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_verse_1(self):
         expected = (
             "1 bottle of beer on the wall, 1 bottle of beer.\n"
@@ -45,7 +40,6 @@ class TestBottles:
 
         assert expected == self.bottles.verse(1)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_verse_0(self):
         expected = (
             "No more bottles of beer on the wall, no more bottles of beer.\n"
@@ -54,7 +48,6 @@ class TestBottles:
 
         assert expected == self.bottles.verse(0)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_a_couple_verses(self):
         expected = (
             "99 bottles of beer on the wall, 99 bottles of beer.\n"
@@ -65,7 +58,6 @@ class TestBottles:
 
         assert expected == self.bottles.verses(99, 98)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_a_few_verses(self):
         expected = (
             "2 bottles of beer on the wall, 2 bottles of beer.\n"
@@ -78,7 +70,6 @@ class TestBottles:
 
         assert expected == self.bottles.verses(2, 0)
 
-    @pytest.mark.skip(reason="not yet implemented")
     def test_the_whole_song(self):
         expected = (
             "99 bottles of beer on the wall, 99 bottles of beer.\n"
